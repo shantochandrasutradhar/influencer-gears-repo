@@ -99,14 +99,12 @@ nav ul li a:hover{
     text-align: center;
     margin-top: 30px;
 }
-
 .card-container{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 50px 0px 60px 0px;
-
 }
 .card{
     width: 300px;
@@ -133,9 +131,27 @@ nav ul li a:hover{
     font-weight: 400;
     color:#000000 ;
 }
+
+.customers-feedback{
+    display: flex;
+  
+}
+.review-images{
+    display: flex;
+    align-items: center;
+}
+.card-img{
+    width: 20px;
+    height: 20px;
+}
+.price-shows{
+    margin-left: 5px;
+    color: #656565;
+}
+
 .card-description{
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     color: #787885;
 }
 .btnn{
@@ -207,4 +223,67 @@ nav ul li a:hover{
     color: rgb(201, 209, 215);
     margin-top: 30px;
     margin-left: 10px;
+}
+
+
+
+/*responsive media queary*/
+
+
+@media screen and (max-width: 576px) {
+    .nav-container,.hero-section,.feature-section,
+    .btnn,nav ul,.btn,.sponsers-box,.collection,.main-margin{
+        flex-direction: column;
+        text-align: center;
+    }
+   
+    .main-margin{
+        margin: 0px;
+        padding: 20px;
+    }
+   
+    .div1 img{
+        width: 200px;
+        margin-top: 20px;
+    }
+    
+   .btnn{
+    margin-left:200px;
+    margin-bottom: -20px;
+   }
+   nav ul{
+    padding: 20px 0px 0px 0px;
+   }
+   .hero-section h1{
+    font-size: 2.2rem;
+    margin-top: -20px;
+   }
+   .btn{
+    padding: 12px 20px;
+   }
+   .sponsers-box{
+    width: 280px;
+    display: inline-block;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: -15px;
+    border: none;
+   }
+   .sponsers-box img{
+    width: 60px;
+   }
+   .collection{
+   font-size: 1.5rem;
+   margin-top: -10px;
+   }
+   .feature-section{
+    padding-top: 40px;
+    margin-bottom: 15px;
+   }
+   .feature-section img{
+    width: 100%;
+    margin-bottom: 30px;
+   }
+   
+    
 }
